@@ -3,7 +3,7 @@
 let nombres=[];
 
 
-function agregarNombre(nombre){
+function agregarAmigo(){
 
     //aqui almacenamos en vector nombre
     let input = document.getElementById("amigo");
@@ -11,15 +11,16 @@ function agregarNombre(nombre){
     let nombre = input.value.trim();
 
     if(nombre !== ""){
-        this.nombres.push(nombre);
+        nombres.push(nombre);
 
         // Mostrar todos los amigos
-        this.mostrarLista();
+        mostrarLista();
 
         // Mostrar el ultimo agregado
-        this.mostrarResultado();
+        mostrarResultado();
 
         input.value = ""; //limpiamos campo
+        input.focus();
     }else{
         alert("por favor, esccribe nombre antes de añadir")
     }
@@ -27,7 +28,7 @@ function agregarNombre(nombre){
 
 function mostrarLista(){
     let contenedor = document.getElementById("listaAmigos")
-    contenedor.innerHTML = this.nombres
+    contenedor.innerHTML = nombres
         .map(n => `<li>${n}</li>`)
         .join("");
 }
