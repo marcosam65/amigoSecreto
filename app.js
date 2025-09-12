@@ -8,7 +8,7 @@ function agregarNombre(nombre){
     //aqui almacenamos en vector nombre
     let input = document.getElementById("amigo");
     //Uso trim() para evitar nombres vacíos o con solo espacios
-    let nombre = input.ariaValueMax.trim();
+    let nombre = input.value.trim();
 
     if(nombre !== ""){
         this.nombres.push(nombre);
