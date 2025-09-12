@@ -26,7 +26,7 @@ function agregarNombre(nombre){
 }
 
 function mostrarLista(){
-    let contenedor = document.getElementById("listaNombres")
+    let contenedor = document.getElementById("listaAmigos")
     contenedor.innerHTML = this.nombres
         .map(n => `<li>${n}</li>`)
         .join("");
