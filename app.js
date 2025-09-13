@@ -2,6 +2,10 @@
 
 let nombres=[];
 
+// Al cargar la página, desactivar el botón reiniciar
+window.onload = function(){
+    document.getElementById("reiniciarBtn").disabled = true;
+}
 
 function agregarAmigo(){
 
@@ -41,7 +45,7 @@ function mostrarResultado(nombre){
 }
 
 function sortearAmigo(){
-    if(nombres.length == 0){
+    if(nombres.length === 0){
         alert("Primero agrega nombres, antes de sortear.");
         return;
     }
@@ -53,6 +57,9 @@ function sortearAmigo(){
     //Mostrar resultado
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>🎉 Tu amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
+
+    // Activar botón reiniciar al menos un sorteo
+    document.getElementById("reiniciarBtn").disabled = false;
 }
 
 function reiniciarSorteo(){
@@ -73,4 +80,7 @@ function reiniciarSorteo(){
     input.focus();
 
     aler("El juego se ha reiniciado");
+
+    // Volver a desactivar el botón reiniciar
+    document.getElementById("reiniciarBtn").disabled = true;
 }

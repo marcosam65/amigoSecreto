@@ -156,11 +156,18 @@ ul {
     font-size: 16px;
 }
 
-
 .button-draw img {
     margin-right: 40px;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-draw:disabled {
+    background-color: #cbcaca;   /* gris plomo */
+    color: #666;              /* texto gris oscuro */
+    cursor: not-allowed;      /* muestra que no se puede hacer clic */
+    opacity: 0.7;             /* un poquito más apagado */
+    transform: none;
 }
