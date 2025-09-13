@@ -3,7 +3,8 @@
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button-hover: #1675c9;
+    --color-button2:#1535d5;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -90,6 +91,8 @@ body {
 .button-container {
     width: 300px;
     justify-content: center;
+    display: flex;
+    gap: 0.3125em;
 }
 
 /* Estilos de entrada de texto */
@@ -136,7 +139,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #0e0f0e;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -149,9 +152,10 @@ ul {
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color: var(--color-button);
+    background-color: var(--color-button2);
     font-size: 16px;
 }
+
 
 .button-draw img {
     margin-right: 40px;
