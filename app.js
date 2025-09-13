@@ -45,4 +45,12 @@ function sortearAmigo(){
         alert("Primero agrega nombres, antes de sortear.");
         return;
     }
+
+    //Gereamos el indice aleatorio en la funcion
+    let indice = Math.floor(Math.random()*nombres.length);
+    let amigoSorteado = nombres[indice];
+
+    //Mostrar resultado
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = `<li>🎉 Tu amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
 }
