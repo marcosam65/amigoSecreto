@@ -17,7 +17,7 @@ function agregarAmigo(){
         mostrarLista();
 
         // Mostrar el ultimo agregado
-        mostrarResultado();
+        mostrarResultado(nombre);
 
         input.value = ""; //limpiamos campo
         input.focus();
@@ -53,4 +53,24 @@ function sortearAmigo(){
     //Mostrar resultado
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>🎉 Tu amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
+}
+
+function reiniciarSorteo(){
+    //Vaciar arreglo
+    nombres = [];
+
+    //Liampiar lista de amigos
+    let contenedor = document.getElementById("listaAmigos");
+    contenedor.innerHTML = "";
+
+    //Limpiar el resultado
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = "";
+
+    //Limpiar y enfocar el input
+    let input = document.getElementById("nombre");
+    input.value = "";
+    input.focus();
+
+    aler("El juego se ha reiniciado");
 }
