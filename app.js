@@ -33,7 +33,16 @@ function mostrarLista(){
         .join("");
 }
 
+
+// Esta función muestra un mensaje confirmando el último nombre agregado
 function mostrarResultado(nombre){
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>Nombre "${nombre}" agregado con éxito.</li>`;
+}
+
+function sortearAmigo(){
+    if(nombres.length == 0){
+        alert("Primero agrega nombres, antes de sortear.");
+        return;
+    }
 }
