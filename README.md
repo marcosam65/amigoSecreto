@@ -31,3 +31,9 @@ style: unificar estilos de botones sortear y reiniciar
 - Botones usan estilo base común.
 - Diferenciación visual por clase: sortear (azul), reiniciar (azul).
 - Hover y disabled aplicados correctamente.
+
+## 🎥 Video de demostración
+
+[![Mira el video en YouTube](https://img.youtube.com/vi/uxgataGwV1E/hqdefault.jpg)](https://www.youtube.com/watch?v=uxgataGwV1E)
+
+
